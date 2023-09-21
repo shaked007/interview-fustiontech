@@ -1,0 +1,1 @@
+export { CookpalHome } from "./CookpalHome";

@@ -1,0 +1,67 @@
+{
+  "recipes": [
+    {
+      "id": 782585,
+      "title": "סלט קנליני שעועית ואספרגוס עם פטריות",
+      "image": "https://spoonacular.com/recipeImages/782585-312x231.jpg",
+      "imageType": "jpg",
+      "like": true
+    },
+    {
+      "id": 716426,
+      "title": "כרובית, אורז חום ואורז מטוגן ירקות",
+      "image": "https://spoonacular.com/recipeImages/716426-312x231.jpg",
+      "imageType": "jpg",
+      "like": true
+    },
+    {
+      "id": 715415,
+      "title": "מרק עדשים אדומות עם עוף ולפת",
+      "image": "https://spoonacular.com/recipeImages/715415-312x231.jpg",
+      "imageType": "jpg",
+      "like": true
+    },
+    {
+      "id": 716406,
+      "title": "מרק אספרגוס ואפונה: אוכל נוחות אמיתי",
+      "image": "https://spoonacular.com/recipeImages/716406-312x231.jpg",
+      "imageType": "jpg",
+      "like": false
+    },
+    {
+      "id": 644387,
+      "title": "Garlicky Kale",
+      "image": "https://spoonacular.com/recipeImages/644387-312x231.jpg",
+      "imageType": "jpg",
+      "like": false
+    },
+    {
+      "id": 715446,
+      "title": "תבשיל בקר בבישול איטי",
+      "image": "https://spoonacular.com/recipeImages/715446-312x231.jpg",
+      "imageType": "jpg",
+      "like": false
+    },
+    {
+      "id": 782601,
+      "title": "Red Kidney Bean Jambalaya",
+      "image": "https://spoonacular.com/recipeImages/782601-312x231.jpg",
+      "סוג תמונה": "jpg",
+      "like": false
+    },
+    {
+      "id": 795751,
+      "title": "עוף פג'יטה ממולא פלפל",
+      "image": "https://spoonacular.com/recipeImages/795751-312x231.jpg",
+      "imageType": "jpg",
+      "like": false
+    },
+    {
+      "id": 766453,
+      "title": "חומוס וזעתר",
+      "image": "https://spoonacular.com/recipeImages/766453-312x231.jpg",
+      "imageType": "jpg",
+      "like": false
+    }
+  ]
+}

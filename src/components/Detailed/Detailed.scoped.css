@@ -1,0 +1,12 @@
+img{
+    width: 100%;
+}
+
+div{
+    display: flex;
+    background-color: grey;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 0 auto  ;
+}

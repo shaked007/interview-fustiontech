@@ -1,0 +1,62 @@
+.box {
+  height: 315px;
+  position: relative;
+  width: 944px;
+}
+.titles{
+  color: '#252525';
+  font-size: 20;
+  font-weight: 500;
+  white-space: nowrap;
+
+  word-wrap: break-word;
+}
+.links{
+   color:rgb(230, 136, 28);   
+   text-decoration: none;
+   font-weight: 700;
+font-size: 20;
+
+
+}
+.bottom-flex{
+  padding: 1em 1em;
+  display: flex;
+  justify-content: space-between;
+}
+.like-btn
+{
+  border: none;
+  font-size: 20px;
+  background-color: transparent;
+  color: red;
+}
+.not-like-btn{
+  border: none;
+  font-size: 20px;
+  background-color: transparent;
+}
+.bottom{
+  padding: 1em 1em;
+}
+.img{
+  background-position: 50% 50%;
+  background-size: cover;
+  border-radius: 16px;
+  height: 200px;
+  left: 0;
+  position: relative;
+  top: 0;
+  width: 100%;
+}
+ .card-product {
+  background-color: #ffffff;
+  border-radius: 16px;
+  position: relative;
+  box-shadow: 0px 3px 8px -1px #3232470d, 0px 0px 1px #0c1a4b3d;
+  height: 315px;
+  left: 0;
+  overflow: hidden;
+  top: 0;
+  width: 305px;
+}
