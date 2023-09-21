@@ -1,15 +1,5 @@
 import React, { useEffect ,useState} from "react";
-import { Arrow } from "../../icons/Arrow";
-import { Arrow1 } from "../../icons/Arrow1";
-import { Chevron4 } from "../../icons/Chevron4";
-import { Facebook } from "../../icons/Facebook";
-import { IconlyBoldStar11 } from "../../icons/IconlyBoldStar11";
-import { Instagram } from "../../icons/Instagram";
-import { LiChevronDown1 } from "../../icons/LiChevronDown1";
-import { LiSearch } from "../../icons/LiSearch";
-import { Linkedin } from "../../icons/Linkedin";
-import { Size24PxFillTrue } from "../../icons/Size24PxFillTrue";
-import { Twitter } from "../../icons/Twitter";
+
 import "./style.scoped.css";
 import { Box } from "../Box/Box";
 import uuid from 'react-uuid';
