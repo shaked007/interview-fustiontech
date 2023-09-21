@@ -20,18 +20,22 @@ const router = createBrowserRouter([
 ])
 export const MainContext = createContext()
 const ContextComponent =({children})=>{
+  const [loader,setLoader] = useState(false)
+  const [error,setError] = useState(false)
   const [recipes,setRecepies] = useState([])
   useEffect(()=>{
     
     const getFunc = async  () =>{
-      let response
+      let response;
       try{
-      response = await  axios.get('http://localhost:3001/recipes')
+        setLoader(true)
+        response = await axios.get('http://localhost:3001/recipes')
+        setRecepies(response.data)
+
       }catch(err){
-        // setError(true)
+        setError(true)
       }
-       console.log(response.data)
-       setRecepies(response.data)
+      setLoader(false)
        
     }
 
@@ -41,21 +45,23 @@ const ContextComponent =({children})=>{
     let res;  
        let val = recipes.filter((rec) =>rec.id==id)[0]
        let newLike = !val.like
+       try{
           res= await axios.put(`http://localhost:3001/recipes/${id}`,{
           ...val,like:newLike
             
           })
-          console.log(res.data)
-      
         setRecepies(prev=>{
           return prev.map((item)=>{
             return item.id == id ? {...item,like:!item.like} : item 
           })
         }) 
+      }catch(err){
+        setError(true)
+      }
   }
     
       return(
-        <MainContext.Provider value={{recipes,toggleLike,setRecepies}}>
+        <MainContext.Provider value={{recipes,toggleLike,setRecepies,error,setError,loader,setLoader}}>
           {children}
         </MainContext.Provider>
       )

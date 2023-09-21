@@ -10,10 +10,8 @@ import { useContext } from "react";
 import { MainContext } from "../..";
 const Detailed =()=>{
       const {id} = useParams()
-      const {toggleLike,recipes} = useContext(MainContext) 
+      const {toggleLike,recipes,loader,error} = useContext(MainContext) 
 
-      const [loader,setLoader] = useState(false)
-      const [error,setError] = useState(false)
 
       const [item,setItem ] = useState(null)
       const localUpdate=(id)=>{
@@ -24,12 +22,14 @@ const Detailed =()=>{
       let final = recipes.filter((rec)=> rec.id ==id)
 
           if(error){
-            return (<h1>error! </h1>)
+            return (<div> <h1>error! </h1></div>)
           }
 
       if(loader){
             return (
+                  <div>
             <CircularProgress />
+            </div>
             )
       }
           return (

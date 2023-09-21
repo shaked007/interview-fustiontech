@@ -11,9 +11,8 @@ import { MainContext } from "../..";
 import CircularProgress from '@mui/material/CircularProgress';
 import {Link} from 'react-router-dom'
 export const CookpalHome = () => {
-  const {toggleLike,recipes,setRecepies} = useContext(MainContext) 
-  const [loading,setLoading] = useState(false)
-  const [error,setError] = useState(false)
+  const {toggleLike,recipes,setRecepies,loader,error} = useContext(MainContext) 
+ 
   const [filters,setFilters] = useState({search:''})
   const resetFilter =(e)=>{
       setFilters({search:''})
@@ -42,7 +41,7 @@ export const CookpalHome = () => {
           </div>
         <div className="grid-recipes">
  
-          {!loading  && filters? filteredRecipes.map(rec=>{
+          {!loader  && filters? filteredRecipes.map(rec=>{
             return (
               <Box
               toggleLike={()=>toggleLike(rec.id)}
